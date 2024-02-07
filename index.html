@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Julian Jimenez">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js"></script>
+    <title>Encriptador de texto</title>
+  </head>
+
+  <body>
+    <img class="logo" src="images/Logo.png" />
+    <main>
+      <div class="textBoxAndbuttons">
+        <textarea
+          id="myTextArea"
+          class="addText"
+          placeholder="Ingrese el texto aqui"
+          required
+        ></textarea>
+        <p class="reminder">
+          <img class="signoExclamacion" src="images/signo-exclamación.png" />
+          Solo letras minúsculas y sin acentos
+        </p>
+        <button onclick="encryptText()" id="encryptText" class="encryptButton">
+          Encriptar
+        </button>
+        <button onclick="decryptText()" id="decryptText" class="decryptButton">
+          Desencriptar
+        </button>
+      </div>
+      <div id="box" class="box">
+        <img id="imgToChange" class="image-muñeco" src="images/Muñeco.png" />
+        <p id="messageNotFound" class="messageNotFound">
+          Ningún mensaje fue encontrado
+        </p>
+        <p id="message" class="message">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <button onclick="copyText()" id="copyButton" class="copyButton">
+          Copiar
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+Body {
+  background-color: white;
+  width: 940px;
+}
+
+.logo {
+  position: relative;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+
+.addText {
+  color: #0a3871;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  text-align: left;
+  position: relative;
+  left: 0.9375rem;
+  bottom: 5rem;
+  border: none;
+  outline: none;
+  height: 20rem;
+  width: 40rem;
+}
+.addText::placeholder {
+  color: #0a3871;
+}
+
+.signoExclamacion {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
+
+.reminder {
+  opacity: 0.8;
+  color: #495057;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  text-align: left;
+  position: relative;
+  left: 20px;
+}
+
+.textBoxAndbuttons {
+  position: relative;
+  top: 150px;
+  left: 220px;
+}
+
+.encryptButton {
+  color: white;
+  background-color: #0a3871;
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+  margin-right: 12px;
+}
+
+.decryptButton {
+  color: #0a3871;
+  background-color: #d8dfe8;
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+/*box is where the encrypt or decrypt message is show*/
+
+.box {
+  background-color: #ffffff;
+  width: 355px;
+  height: 640px;
+  position: relative;
+  left: 970px;
+  bottom: 470px;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px #00000014;
+}
+.image-muñeco {
+  position: relative;
+  width: 266px;
+  height: 254px;
+  top: 5rem;
+  left: 3rem;
+}
+.messageNotFound {
+  color: #343a40;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: relative;
+  top: 5rem;
+}
+.message {
+  color: #343a40;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  position: relative;
+  top: 5rem;
+}
+.textToShow {
+  color: #495057;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 336px;
+  height: 510px;
+  position: relative;
+  left: 18px;
+  border: none;
+  outline: none;
+}
+
+.copyButton {
+  display: none;
+  color: #0a3871;
+  background-color: white;
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+  margin-right: 12px;
+  position: relative;
+  top: 34px;
+  left: 20px;
+}
+.encryptButton:hover,
+.decryptButton:hover,
+.copyButton:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 375px;
+  }
+  .logo {
+    top: 1rem;
+    left: -2rem;
+  }
+
+  .addText {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    height: 20rem;
+    width: 19rem;
+  }
+
+  .reminder {
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .textBoxAndbuttons {
+    position: relative;
+    top: 11rem;
+    left: 1rem;
+  }
+
+  .encryptButton {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    margin-right: 12px;
+    position: relative;
+    bottom: 5.4rem;
+  }
+  .decryptButton {
+    position: relative;
+    top: -5rem;
+    background-color: white;
+    color: #0a3871;
+    border-color: #0a3871;
+  }
+
+  /*box is where the encrypt or decrypt message is show*/
+
+  .box {
+    position: relative;
+    top: 8rem;
+    left: 0.8em;
+    width: 327px;
+    height: 186px;
+  }
+  .image-muñeco {
+    display: none;
+  }
+
+  .messageNotFound {
+    line-height: 29px;
+    text-align: center;
+    top: 0.5rem;
+  }
+
+  .message {
+    line-height: 24px;
+    text-align: center;
+    top: 2rem;
+  }
+
+  .textToShow {
+    height: 595;
+    left: -0.3rem;
+  }
+  .copyButton {
+    position: absolute;
+    top: 31.5rem;
+    left: -0.1rem;
+    left: 0.5rem;
+    background-color: white;
+    color: #0a3871;
+    border-color: #0a3871;
+  }
+  .encryptButton:hover,
+  .decryptButton:hover,
+  .copyButton:hover {
+    cursor: pointer;
+    background-color: gray;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 768px;
+    height: 1174px;
+  }
+  .logo {
+    top: 5rem;
+    left: 1rem;
+    width: 180px;
+  }
+
+  .addText {
+    font-size: 35px;
+    height: 560px;
+    width: 690px;
+  }
+  .reminder {
+    bottom: 5.5rem;
+    font-size: 18px;
+  }
+
+  .textBoxAndbuttons {
+    position: relative;
+    top: 16rem;
+    left: 4rem;
+  }
+
+  .encryptButton {
+    width: 350px;
+    height: 85px;
+    font-size: 20px;
+    position: relative;
+    bottom: 5.5rem;
+    left: 0.5rem;
+  }
+  .decryptButton {
+    width: 350px;
+    height: 85px;
+    font-size: 20px;
+    position: relative;
+    bottom: 5.5rem;
+    background-color: white;
+    color: #0a3871;
+    border-color: #0a3871;
+  }
+  /*
+  
+  /*box is where the encrypt or decrypt message is show*/
+
+  .box {
+    top: 11rem;
+    left: 4.7rem;
+    height: 155px;
+    width: 715px;
+  }
+
+  .image-muñeco {
+    display: none;
+  }
+
+  .messageNotFound {
+    top: 2rem;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .message {
+    position: absolute;
+    left: 7rem;
+    font-size: 20px;
+  }
+
+  .textToShow {
+    font-size: 35px;
+    height: 560px;
+    width: 690px;
+    top: 2rem;
+  }
+
+  .copyButton {
+    width: 535px;
+    left: 6.5rem;
+    font-size: 20px;
+    background-color: white;
+    color: #0a3871;
+    border-color: #0a3871;
+  }
+  .encryptButton:hover,
+  .decryptButton:hover,
+  .copyButton:hover {
+    cursor: pointer;
+    background-color: gray;
+  }
+}
